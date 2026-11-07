@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Android Club | We build apps. You'll ship one.</title>
+  <meta name="description" content="Android Club: a student community that learns Kotlin, builds real apps and ships them.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav" id="top">
+    <a class="brand" href="#top"><img src="assets/favicon.svg" alt="" width="28" height="28">Android Club</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#events">Events</a>
+      <a href="#contact" class="btn btn-small">Join us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Welcome -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>We build apps.<br>You'll ship one.</h1>
+        <p class="lead">Android Club is a student community where beginners become developers. Learn Kotlin, work in teams and publish real apps.</p>
+        <div class="actions">
+          <a href="#contact" class="btn">Join the club</a>
+          <a href="#projects" class="btn btn-ghost">See what we've built</a>
+        </div>
+      </div>
+      <div class="phone" aria-hidden="true">
+        <div class="screen">
+          <div class="tabs"><span class="on" data-tab="0">Main.kt</span><span data-tab="1">UI.kt</span></div>
+          <pre><code id="code"></code><span class="caret"></span></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2>About us</h2>
+      <p class="section-intro">We are a group of students who like making things people actually use. No experience needed. If you can be curious for an hour a week, you can join.</p>
+      <div class="about-grid">
+        <article>
+          <h3>Learn</h3>
+          <p>Weekly workshops on Kotlin, Jetpack Compose, Firebase and app design, taught by seniors and guest mentors.</p>
+        </article>
+        <article>
+          <h3>Build</h3>
+          <p>Join a project team and work like a real product studio: issues, code reviews and demos.</p>
+        </article>
+        <article>
+          <h3>Ship</h3>
+          <p>We help you publish to the Play Store and take apps to hackathons and competitions.</p>
+        </article>
+      </div>
+      <ul class="stats">
+        <li><strong data-count="120">0</strong> members</li>
+        <li><strong data-count="18">0</strong> apps built</li>
+        <li><strong data-count="40">0</strong> workshops</li>
+        <li><strong data-count="6">0</strong> hackathon wins</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="section alt" id="projects">
+      <h2>Projects showcase</h2>
+      <p class="section-intro">A few things our members have built. Replace these with your own.</p>
+      <div class="projects">
+        <article class="card c1">
+          <div class="card-top"><span class="chip">Compose</span><span class="emoji" aria-hidden="true">📚</span></div>
+          <h3>CampusNotes</h3>
+          <p>Share and search lecture notes by course. Works offline.</p>
+          <a href="#" class="link">View on GitHub</a>
+        </article>
+        <article class="card c2">
+          <div class="card-top"><span class="chip">Firebase</span><span class="emoji" aria-hidden="true">🚌</span></div>
+          <h3>BusBuddy</h3>
+          <p>Live campus bus tracking with arrival alerts.</p>
+          <a href="#" class="link">View on GitHub</a>
+        </article>
+        <article class="card c3">
+          <div class="card-top"><span class="chip">Room DB</span><span class="emoji" aria-hidden="true">✅</span></div>
+          <h3>HabitHive</h3>
+          <p>A habit tracker with streaks and a home-screen widget.</p>
+          <a href="#" class="link">View on GitHub</a>
+        </article>
+        <article class="card c4">
+          <div class="card-top"><span class="chip">ML Kit</span><span class="emoji" aria-hidden="true">🌿</span></div>
+          <h3>PlantPal</h3>
+          <p>Point your camera at a leaf to identify the plant.</p>
+          <a href="#" class="link">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="section" id="events">
+      <h2>Events</h2>
+      <div class="toggle" role="tablist">
+        <button role="tab" class="on" data-show="upcoming" aria-selected="true">Upcoming</button>
+        <button role="tab" data-show="past" aria-selected="false">Past</button>
+      </div>
+      <ol class="timeline" id="upcoming">
+        <li><time>15 Nov</time><div><h3>Compose Crash Course</h3><p>Build your first UI in 2 hours. Bring a laptop with Android Studio.</p></div></li>
+        <li><time>29 Nov</time><div><h3>Intro to Firebase</h3><p>Add login and a live database to your app.</p></div></li>
+        <li><time>14 Dec</time><div><h3>24-hour Appathon</h3><p>Teams of four, one problem, one working app.</p></div></li>
+      </ol>
+      <ol class="timeline hidden" id="past">
+        <li><time>10 Oct</time><div><h3>Android Study Jam</h3><p>40 students built their first Kotlin app.</p></div></li>
+        <li><time>22 Sep</time><div><h3>Orientation Day</h3><p>Met the team, saw demos and picked project groups.</p></div></li>
+        <li><time>05 Aug</time><div><h3>Play Store Launch Talk</h3><p>An alumnus shared how to publish an app.</p></div></li>
+      </ol>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <h2>Join us</h2>
+      <p class="section-intro">Tell us who you are and we'll add you to the next meetup.</p>
+      <div class="contact-grid">
+        <form id="join-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+          <label for="msg">Why do you want to join?</label>
+          <textarea id="msg" name="msg" rows="3"></textarea>
+          <button type="submit" class="btn">Send request</button>
+          <p class="form-note" id="form-note" role="status"></p>
+        </form>
+        <div class="reach">
+          <h3>Find us</h3>
+          <p>Room 204, Computer Science Block<br>Meetups every Friday, 5 PM</p>
+          <p><a href="mailto:androidclub@example.com">androidclub@example.com</a></p>
+          <ul class="social">
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://discord.com/" target="_blank" rel="noopener">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Android Club. Android is a trademark of Google LLC.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
